@@ -1,0 +1,82 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #0056b3;
+    --placeholder-color: #999;
+    --background-color: #444242;
+    --draggable-background: #ddd;
+    --draggable-hover-background: #ccc;
+    --button-background: var(--primary-color);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+#container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #bebcbc;
+    overflow: hidden; /* Para contener el float */
+}
+
+.palabras-container {
+    float: left; /* Alinea a la izquierda */
+    width: 30%; /* Ocupa el 50% del contenedor */
+    padding-right: 10px; /* Separación entre las palabras y la historia */
+    text-align: center;
+}
+
+.historia-container {
+    float: right; /* Alinea a la derecha */
+    width: 60%; /* Ocupa el 50% del contenedor */
+    padding-left: 10px; /* Separación entre las palabras y la historia */
+    text-align: justify;
+    margin-right: 20px;
+}
+
+.grupo p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.draggable {
+    background-color: var(--draggable-background);
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.draggable:hover {
+    background-color: var(--draggable-hover-background);
+}
+
+.resultado {
+    justify-content: center;
+    text-align: center;
+}
+button {
+    background-color: var(--button-background);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+img{
+    width: 50%;
+    height: 50%;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica de Drag and Drop de Spiderman</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="container">
+        <div class="palabras-container">
+            <div class="grupo" id="grupos">
+                <div id="lugar">
+                    <p>Lugar:</p>
+                    <div class="draggable" draggable="true" data-grupo="lugar">Callejón Oscuro</div>
+                    <div class="draggable" draggable="true" data-grupo="lugar">Azotea de un rascacielos</div>
+                    <div class="draggable" draggable="true" data-grupo="lugar">Central Park</div>
+                </div>
+                <div id="accion">
+        
+                    <p>Acción:</p>
+                    <div class="draggable" draggable="true" data-grupo="accion">Batalla contra el Duende Verde</div>
+                    <div class="draggable" draggable="true" data-grupo="accion">Rescate de civiles atrapados en un incendio</div>
+                    <div class="draggable" draggable="true" data-grupo="accion">Persecución de ladrones en motocicletas</div>
+                </div>
+                <div id="persona">
+                    <p>Persona:</p>
+                    <div class="draggable" draggable="true" data-grupo="persona">Mary Jane Watson</div>
+                    <div class="draggable" draggable="true" data-grupo="persona">Tío Ben</div>
+                    <div class="draggable" draggable="true" data-grupo="persona">J. Jonah Jameson</div>
+                </div>
+            </div>
+        </div>
+        <div class="historia-container">
+            <h2>Completa la historia de Spiderman:</h2>
+            <p id="historia-text">En una tarde soleada en la bulliciosa ciudad de Nueva York, Peter Parker, también
+                conocido como Spiderman, se encontraba patrullando las calles en su eterna misión de proteger a los
+                ciudadanos. De repente, recibió una llamada de auxilio desde <span class="placeholder lugar"
+                    data-grupo="lugar">[LUGAR]</span>, donde un grupo de delincuentes estaba causando estragos.</p>
+            <p>Sin dudarlo, Spiderman se lanzó por los rascacielos de la ciudad hacia <span class="placeholder lugar"
+                    data-grupo="lugar">[LUGAR]</span>, utilizando su agilidad y sus telarañas para llegar rápidamente al
+                lugar del incidente. Al llegar, se encontró con una escena caótica: edificios en llamas, personas
+                asustadas y criminales causando caos en las calles.</p>
+            <p>Con determinación, Spiderman se enfrentó a los villanos, utilizando su ingenio y habilidades para
+                detenerlos y proteger a los inocentes. Durante la intensa batalla, realizó una serie de acrobacias
+                impresionantes y desplegó su arsenal de artilugios tecnológicos para neutralizar a los malhechores.</p>
+            <p>En medio del caos, Spiderman se encontró con <span class="placeholder persona"
+                    data-grupo="persona">[PERSONA]</span>, un valiente ciudadano que se unió a él en la lucha contra el
+                crimen. Juntos, formaron un equipo formidable, trabajando en armonía para restaurar la paz en <span
+                    class="placeholder lugar" data-grupo="lugar">[LUGAR]</span> y garantizar la seguridad de sus
+                habitantes.</p>
+            <p>Finalmente, Spiderman se preparó para llevar a cabo su próxima acción: <span class="placeholder accion"
+                    data-grupo="accion">[ACCIÓN]</span>, decidido a continuar su incansable labor de protección y justicia en la
+                ciudad.</p>
+            <img src="img/img2.jpg">
+            
+        </div>
+        
+    </div>
+    
+    <div id="resultado" class="resultado">
+        <button id="continuar">Continuar</button>
+        <button id="limpiar">Limpiar</button>
+        <button id="licencias">Licencias</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
